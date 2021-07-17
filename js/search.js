@@ -77,6 +77,12 @@ function showChart(str) {
   ul = document.getElementById("myUL");
   ul.setAttribute('hidden', "true");
 
-  drawChart('myChart');
-  document.getElementById('myChart').removeAttribute('hidden');
+  drawChart1('myChart1', str);
+  document.getElementById('myChart1').removeAttribute('hidden');
+
+  // drawChart2('myChart2', str);
+  // document.getElementById('myChart2').removeAttribute('hidden');
+
+  drawChart3('myChart3', str);
+  document.getElementById('myChart3').removeAttribute('hidden');
 }
