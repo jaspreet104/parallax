@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Parallax Engine with bootstrap 4.4 and ageon charts</title>
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <!-- Favicon -->
+      <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+      <!-- Icons -->
+      <link href="/assets/vendor/nucleo/css/nucleo.min.css" rel="stylesheet">
+      <link href="/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+      <!-- Argon CSS -->
+      <link type="text/css" href="/assets/css/argon.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="p-3 bg-dark text-white">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    
+                <a href="https://assets-netstorage.groww.in/website-assets/prod/1.7.0/build/client/images/logo-dark-groww.83f43714.svg" 
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+                    <img src="https://image.flaticon.com/icons/png/512/295/295600.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    <span class="fs-4">Parallax Engine</span>
+                </a>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                  <input type="search" class="form-control form-control-dark" placeholder="Search for a stock..." aria-label="Search">
+                </form>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Search</button>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!--* Card init *-->
+          <div class="card bg-primary">
+            Stock ABC
+            <div class="card-header" style="color: black;">
+                Parallax Engine
+                <h5 class="h3 mb-0">Line chart of Infosys</h5>
+            </div>
+            <div class="card-body">
+                <div class="chart">
+                    <!-- Chart wrapper -->
+                    <canvas id="chart-line" class="chart-canvas"></canvas>
+                </div>
+            </div>
+        </div>  
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <!-- Core -->
+        <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Argon JS -->
+        <script src="/assets/js/argon.min.js"></script>
+    </body>
+
+</html>

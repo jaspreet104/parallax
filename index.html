@@ -1,80 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="css/gunnustyles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    <title>Parallax Engine by gunnu</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/particle.css">
+</head>
 
-    <title>Parallax Engine</title>
-  </head>
-  <body>
-    <h1>Parallax Engine</h1>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+<body>
+    
+    <nav class="navbar navbar-light fixed-top" id="section-navbar" style="margin-bottom: 0px; background-color: rgb(5, 255, 213);">
+        <div class="container">
+            <a class="navbar-brand" style="font-family: Algerian;"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/layers-icon.png" width="50" height="44" />
+                Parallax Engine</a>
+             <button class="btn btn-outline-success me-2" style="color: black; "><b>Prediction criterion</b></button>
+             <button class="btn btn-outline-success me-2" style="color: black;"><b>Our team</b></button>            
         </div>
-      </div>
     </nav>
+
+    <header class="page-header gradient">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6" id="section1-left">
+                    <h1 class="algerian">Parallax Engine</h1>
+                    <p>
+                        can't find a good stock. We'll predict and show the
+                        best stocks for you. Just search for it!
+                    </p>                    
+                </div>
+                <div class="col-6 image1" id="section1-right">
+                    <img src="PR_Monochromatic.PNG" height="400px" width="400px"/>
+                </div>
+            </div>
+        </div>
+
+        <section id="section1-searchbar">
+            <div class="container">
+                Try a stock chart for free !<br/><br/>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a stock..">
+                <div id="myUL" hidden="true"></div>
+            </div>
+        </section>
+        
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+            <path fill="#e6e6e6" fill-opacity="1"
+                d="M0,64L48,74.7C96,85,192,107,288,138.7C384,171,480,213,576,192C672,171,768,85,864,48C960,11,1056,21,1152,42.7C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </header>
+    
+    <div class="container-fluid" id="chart-div">
+        <div class="row">
+            <div class="col-8">
+                <canvas id="myChart1" hidden='true'></canvas>  
+            </div>
+        </div>
+    </div>
+
+<section class="team gradient">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e6e6e6" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,138.7C384,171,480,213,576,192C672,171,768,85,864,48C960,11,1056,21,1152,42.7C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <div class="container my-4" id="section-about">
+        <h1 class="algerian">About</h1>
+        <p>
+            Parallax Engine is the company that will give you the best prediction of stocks so  you can invest fearlessly. 
+            Using our website, you can find the best stock investments and make money effortlessly.
+            What are you waiting for... go and hit the search button to see the stock's historical data and future prediction.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3" id="section-about">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFsOl-R5M-SUGKD0Te8EFueY7xvOGxW_lenQ&usqp=CAU">
+            </div>
+
+            <div class="my-4 col-md-6" id="section-features">
+                <h2 class="algerian"> Features </h2>
+                <p>
+                    Some of the great benefits of using 
+                    the webpage of parallax engine are:- 
+                </p>
+            </div>
+        </div>
+
+        <div class="row col-md-12" id="section-features">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-4">
+                <ul>
+                    <li><img src="check-circle.svg"> Parallax Engine is the world's best company that provides the most reliable data and forecast </li>    
+                    <li><img src="check-circle.svg"> Invest without fear by seeing our reliable forecast</li>    
+                    <li><img src="check-circle.svg"> Make money with 0 brockerage fee </li> 
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <ul>
+                    <li><img src="check-circle.svg"> Get access to the data of 100 graphes! </li>    
+                    <li><img src="check-circle.svg"> With our authentic data whatever we do is always crystal clear to the customers. </li>    
+                    <li><img src="check-circle.svg">One can easily search though the stock data provided in the search box</li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </div>
+
     
 
-    <main>
-      <!-- search bar -->
-       
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e6e6e6" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,138.7C384,171,480,213,576,192C672,171,768,85,864,48C960,11,1056,21,1152,42.7C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
 
-      <!-- graph -->
+<section class="team gradient">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e6e6e6" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,138.7C384,171,480,213,576,192C672,171,768,85,864,48C960,11,1056,21,1152,42.7C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6" id="section-meettheteam-img">
+                <img src="Teamsuccess _Monochromatic.png" />
+            </div>
+            <div class="col-md-6" id="section-meettheteam-team">
+                <h1 class="my-3 algerian">Meet The Team</h1>
+                <p class="my-4">
+                    Here are the members participating from lotus
+                    valley international school noida extension
+                </p>
+                <ul>
+                    <li><img src="check-circle.svg">Gunvir Singh</li>
+                    <li><img src="check-circle.svg">Pritish Rastogi</li>
+                    <li><img src="check-circle.svg">Tanay Walia</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e6e6e6" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,138.7C384,171,480,213,576,192C672,171,768,85,864,48C960,11,1056,21,1152,42.7C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
 
-      <!-- tabbed charts -->
-    </main>
+<footer>
+    <b><p class="text-center">Parallax Inc. Copyright &copy; 2021</p></b>
+</footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/prediction.js"></script>  
+<script src="js/chart.js"></script>
+<script src="js/search.js"></script> 
+<script src="js/scroll.js"></script> 
+    
+    <script>
+        document.getElementById('myUL').appendChild(createListOfStocks(stocks))
+    </script>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script src="js/particle.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+</script>
+
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+<script>
+    window.onload = function() {
+        //loadParticleJs();
+        scrollElements();
+    }        
+</script>
+</body>
+
 </html>

@@ -1,0 +1,51 @@
+html,
+body{
+    height: 100%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e6e6e6;
+}
+.gradient{
+    background: rgb(3,154,207);
+    background: radial-gradient(circle, rgba(3,154,207,1) 0%, rgba(9,81,177,1) 50%);
+}
+
+
+.page-header{
+    font-size: 1.25rem;
+    margin-top: 3.5rem;
+    color: white;
+}
+
+.team{
+    color: white;
+}
+
+.team ul{
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+.team ul li{
+    padding-left: 0rem;
+    line-height: 1.5rem;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;    
+}
+
+.image1{
+    float: right;
+    padding-top: 50px;
+}
+
+.colour-for-btn-in-navbar{
+    color: white;
+}
+
+.algerian{
+    font-family: Algerain;
+}
+
+footer {
+    padding: 30px;
+}
