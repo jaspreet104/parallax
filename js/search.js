@@ -76,7 +76,7 @@ function showChart(str) {
 
   ul = document.getElementById("myUL");
   ul.setAttribute('hidden', "true");
-
+ 
   drawChart1('myChart1', str);
   document.getElementById('myChart1').removeAttribute('hidden');
 
